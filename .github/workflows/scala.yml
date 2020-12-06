@@ -1,4 +1,4 @@
-name: Scala CI
+name: petclinic Application
 
 on:
   push:
@@ -19,3 +19,8 @@ jobs:
         java-version: 1.8
     - name: Run tests mvn
       run: mvn package
+    - name: Build & Push images
+      run: |
+        docker login --username=bouchtateam --password=Badr@1987
+        docker image build -t bouchtateal/petclinicGitOps:v1 .
+        docker push bouchtateam/petclinicGitOps:v1
