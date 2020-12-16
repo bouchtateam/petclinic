@@ -21,6 +21,6 @@ jobs:
       run: mvn package
     - name: Build & Push images
       run: |
-        docker login --username=bouchtateam --password= {{ password }}
+        docker login --username=bouchtateam --password=${{ secrets.password }}
         docker image build -t bouchtateam/petclinicgitops:v1 .
         docker push bouchtateam/petclinicgitops:v1
