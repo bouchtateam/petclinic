@@ -16,7 +16,7 @@
 <h5>==>  nudge-apm-server/nudge-war/ </h5>
 <h5> EX: COPY  nudge-apm-server/nudge-war/target/*.war  /usr/local/tomcat/webapps/ROOT.war </h5>
 
-<h2> After generating the war file and cloning Dockerfile  and necessary file configuration we still just: </h2>
+<h2> After generating the war file and cloning Dockerfile  and necessary configuration files we have to: </h2>
 <h5> Build nudge image docker  | Loging to the registry with secrets token | push image to the registry . </h5>
 
-<h2> We ending our pipline with Logout from the docker regitry and remove nudge image after we pushed , and delete all repositry cloned .  </h2>
+<h2> We ended our pipeline with Logout from the docker registry and remove nudge the image after we pushed, and delete all repositories cloned.  </h2>
